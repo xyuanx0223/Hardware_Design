@@ -26,5 +26,6 @@ module mux_2_tb();
     s_a = 1; s_b = 1; sel = 0;
     #200
     s_a = 1; s_b = 1; sel = 1;
+    $stop;
   end
 endmodule
