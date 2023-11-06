@@ -12,19 +12,19 @@ module mux_2_tb();
   );
   initial begin
     s_a = 0; s_b = 0; sel = 0;
-    #200
+    #200;
     s_a = 0; s_b = 0; sel = 1;
-    #200
+    #200;
     s_a = 0; s_b = 1; sel = 0;
-    #200
+    #200;
     s_a = 0; s_b = 1; sel = 1;
-    #200
+    #200;
     s_a = 1; s_b = 0; sel = 0;
-    #200
+    #200;
     s_a = 1; s_b = 0; sel = 1;
-    #200
+    #200;
     s_a = 1; s_b = 1; sel = 0;
-    #200
+    #200;
     s_a = 1; s_b = 1; sel = 1;
     $stop;
   end
