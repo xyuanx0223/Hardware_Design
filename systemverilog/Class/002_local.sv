@@ -6,7 +6,7 @@ class data_hide;
   
   function void data_hide_value();
     $display("----------------------");
-    $display("value of the dsata: %0b", this.data);
+    $display("value of the data: %0b", this.data);
     $display("----------------------");    
   endfunction
   
