@@ -1,10 +1,11 @@
 //`timescale 1ns/1ps
 
 class transaction;
-  
+  // only the input has the rand/randc
   randc bit [3: 0] a;
   rand bit [4: 0] b; 
   rand bit [6: 0] c;
+  // output
   bit [7: 0] dout;
   bit [6: 0] qout;
 
