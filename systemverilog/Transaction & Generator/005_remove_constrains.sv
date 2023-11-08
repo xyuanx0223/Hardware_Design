@@ -8,19 +8,23 @@ endclass
 
 module tb();
   transaction t1;
+  transaction t2;
   integer i;
-  bit [3: 0] data;
+  bit [3: 0] data1, data2;
   
   initial begin
     $display("-------------------------");
     t1 = new();
+    t2 = new();
     for (i = 0; i < 10; i++) begin
       // remove specific constrains
       t1.d1.constraint_mode(0);
       t1.randomize();
-      data = t1.a;
+      t2.randomize();
+      data1 = t1.a;
+      data2 = t2.a;
       #10;
-      $display("value after randomization is %0d", data);
+      $display("value after randomization is %0d  & %0d", data1, data2);
     end
     $display("-------------------------");
     $dumpfile("dump.vcd"); 
@@ -30,4 +34,3 @@ module tb();
   end
   
 endmodule
-
