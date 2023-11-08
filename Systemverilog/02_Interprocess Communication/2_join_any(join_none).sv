@@ -19,7 +19,7 @@ module tb();
       $display("Process 3 at %0t", $time);
       #10;
     end
-    // wait for no thread
+    // wait for no process
     join_none
     // join_any
     $display("All the process are completed at %0t", $time);    
