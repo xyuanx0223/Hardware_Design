@@ -21,10 +21,7 @@ module tb();
     d1 = new();
     #10;
     d1.data_hide_value();
-  end
-  
-
-  initial begin
+    
     $dumpfile("dump.vcd"); 
     $dumpvars;
     #200;
