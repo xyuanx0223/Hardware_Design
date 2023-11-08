@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 class first;
   
   bit [7: 0] data = 8'hff;
