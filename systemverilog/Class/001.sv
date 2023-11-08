@@ -4,7 +4,7 @@ class first;
   
   bit [7: 0] data = 8'hff;
   
-endclass
+endclass: first
 
 module tb();
   
