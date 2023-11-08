@@ -1,1 +1,1 @@
-# Verilog
+# Hardware Design
