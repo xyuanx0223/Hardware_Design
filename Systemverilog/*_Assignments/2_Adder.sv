@@ -2,7 +2,7 @@
 // Create two functions inside the class, one will receive the two arguments from the user and update data members 
 // while the other will return the result of the addition of data members.
 
-class adder();
+class adder;
   bit [13: 0] add_a; 
   bit [13: 0] add_b; 
   
