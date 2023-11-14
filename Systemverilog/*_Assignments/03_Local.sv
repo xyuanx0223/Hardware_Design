@@ -1,4 +1,4 @@
-// Design a class with a 12-bit data member. Make the value of data member local to the class. 
+// Design a class with a 12-bit data member. Make the value of the data member local to the class. 
 // Assume the user has a requirement to get access to the value of data member to perform some computation inside testbench, 
 // Try to add a method to provide access to the value of the data member to the user.
 
