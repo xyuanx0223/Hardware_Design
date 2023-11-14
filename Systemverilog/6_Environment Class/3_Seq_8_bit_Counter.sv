@@ -123,7 +123,7 @@ class environment;
     this.gdmbx = gdmbx;    
     this.msmbx = msmbx;
     gen = new(gdmbx);
-	drv = new(gdmbx);
+    drv = new(gdmbx);
     mon = new(msmbx);
     sco = new(msmbx);
   endfunction
