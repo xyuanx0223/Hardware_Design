@@ -1,0 +1,22 @@
+class transaction;
+  randc bit [4: 0] d1,d2;
+endclass
+
+module tb();
+  transaction t1;
+  bit [4: 0] data1, data2;
+  
+  initial begin
+    t1 = new();
+    t1.randomize();
+    data1 = t1.d1;    
+    data2 = t1.d2;
+    #10;
+    $display("value of data member 1 : %0d and data member 2 : %0d",
+            data1, data2);
+  end
+endmodule
+
+// Vivado does not support the following
+// $display("value of data member 1 : %0d and data member 2 : %0d",
+            t1.d1, t1.d2);
