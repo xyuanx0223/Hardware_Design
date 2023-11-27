@@ -1,5 +1,5 @@
 * Logical right shift (i.e >>) & arithmetic right shift (i.e >>>)*
-A )Logical Left and Arithmetic Left shift show no difference in the result.
+A) Logical Left and Arithmetic Left shift show no difference in the result.
 
 B) Whereas if we consider the Right shift logical it adds zero at MSB while shifting the rest of the bit to the right resulting in minus the MSB
 
@@ -9,6 +9,6 @@ C) For unsigned data, This works pretty much perfectly but for Signed data if we
 
 * If you use the Blocking operator( = ), Code will proceed in a Sequential manner while with the non-blocking operator (<=), Code will proceed in Parallel.*
 
-*Typical use of Integer datatypes to create big delays. (Traction)*
+* Typical use of Integer datatypes to create big delays. (Traction)*
 
-*integer is synthesizable but real is not synthesizable in Verilog.*
+* Integer is synthesizable but real is not synthesizable in Verilog.*
