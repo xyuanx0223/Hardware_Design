@@ -44,6 +44,12 @@ Sequence：
 | $strobe ();              |
 | ------------------------ |
 2) $monitor();
+report the value only when updated
+can only be added once in the execution
 3) $strobe();
+
+$display is very simple like printf in C. It prints when that piece of code gets executed. 
+$monitor is when any variable specified in the RHS changes it gets printed. Basically $monitor monitors continuously, and displays every time one of its display parameters changes.
+$strobe prints the actual value at the end of each time step. $strobe executes in MONITOR/POSTPONE region, that is, at the end of the time stamp. Hence the updated value is shown by $strobe.
 
 # Blocking & Nonblocking Assignment 
