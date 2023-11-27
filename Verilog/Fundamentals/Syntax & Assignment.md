@@ -53,12 +53,29 @@ $monitor is when any variable specified in the RHS changes it gets printed. Basi
 $strobe prints the actual value at the end of each time step. $strobe executes in MONITOR/POSTPONE region, that is, at the end of the time stamp. Hence the updated value is shown by $strobe.
 
 ## Assignment Operator
+evaluate the sensitive list/ R.H.S of the Continuous Assignment
 1) Continuous Assignment
-
+   L.H.S.: wire/ net
+   *assign*
+   
 2) Procedural Assignment
-Blocking & Nonblocking Assignment 
+   L.H.S.: reg
+   *initial begin end*
+   *always @ (sensitive list) begin end*
+   Blocking (=) & Nonblocking (<=) Assignment 
 
-
+SWAPPING
+1) initial begin
+   temp = a;
+   a = b; 
+   b = temp;
+   end
+   happens in the active region
+3) initial begin
+   c <= d;
+   d <= c;
+   end
+   happens in the nonblocking active region
 
 
 
