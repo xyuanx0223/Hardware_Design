@@ -35,8 +35,8 @@ the floating type comes into play
 can only observe the previous value of the non-blocking assignment
 but can observe the updated value of Continuous & Blocking Assignment
 Sequence：
-| ------------------------ |
-| Continuous    Assignment |
+*| ------------------------ |
+*| Continuous    Assignment |
 | Blocking      Assignment |
 | $display();              |
 | Nonblocking   Assignment |
