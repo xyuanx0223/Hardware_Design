@@ -12,3 +12,7 @@ C) For unsigned data, This works pretty much perfectly but for Signed data if we
 * Typical use of Integer datatypes to create big delays. (Traction)*
 
 * Integer is synthesizable but real is not synthesizable in Verilog.*
+
+* == & === *
+1)  == operator works perfectly to compare a variable with 0 and 1 values but does not work with X and z values.
+2） === will perfectly able to compare x and z values.
