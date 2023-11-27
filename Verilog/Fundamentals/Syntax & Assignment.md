@@ -62,8 +62,11 @@ evaluate the sensitive list/ R.H.S of the Continuous Assignment
    L.H.S.: reg
    *initial begin end*
    *always @ (sensitive list) begin end*
-   Blocking (=) & Nonblocking (<=) Assignment 
-
+   Blocking Assignment(=)：
+      work sequentially
+   Nonblocking Assignment(<=)：
+      work in parallel
+   
 SWAPPING
 1) initial begin
    temp = a;
