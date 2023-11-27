@@ -43,4 +43,5 @@ asynchronous： always @ (posedge clk, posedge rst)
       end
       default:
       endcase
-### 5)
+### if VS case:
+*if would have a priority, while the case is fair.*
