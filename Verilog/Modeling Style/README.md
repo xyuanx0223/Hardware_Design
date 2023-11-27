@@ -4,6 +4,7 @@
 
 ### 2) Switch level modeling style
 *Switches*
+non-synthesizable in Vivado
 
 ### 3) Structural-level modeling style
 
