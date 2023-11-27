@@ -37,15 +37,22 @@ but can observe the updated value of Continuous & Blocking Assignment
 Sequence：
 ---
 | ------------------------ |
+---
 | Continuous    Assignment |
+---
 | Blocking      Assignment |
+---
 | $display();              |
+---
 | Nonblocking   Assignment |
+---
 | $monitor();              |
+---
 | $strobe ();              |
+---
 | ------------------------ |
 ---
-3) $monitor();
-4) $strobe();
+2) $monitor();
+3) $strobe();
 
 # Blocking & Nonblocking Assignment 
