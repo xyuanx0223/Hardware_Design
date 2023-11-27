@@ -17,7 +17,7 @@ D) implement system Behavior with procedural block
 E) assign the value of the temporary variable to O/I ports
 
 ## Construct
-### initial: initialize
-### always: 
+### 1) initial: initialize
+### 2) always: 
 Combinational: it depends on all the inputs
 Sequential: O/P depends clock
