@@ -1,0 +1,6 @@
+logical right shift (i.e >>) & arithmetic right shift (i.e >>>)
+A )Logical Left and Arithmetic Left shift show no difference in the result.
+
+B) Whereas if we consider the Right shift logical it adds zero at MSB while shifting the rest of the bit to the right resulting in minus the MSB
+
+C) For unsigned data, This works pretty much perfectly but for Signed data if we declare reg signed [7:0] din; we lose the signed bit.
