@@ -1,8 +1,9 @@
-# identifiers & number format
+# Identifiers & Number format
 eg: Module __;
 1) Must always start with an alphabet
-2) alphabet, numbers, _
-Verilog is case-sensitive  & SystemVerilog isn't case-sensitive
+2) Naming scheme
+alphabet, numbers, _
+3) Verilog is case-sensitive & SystemVerilog isn't case-sensitive
 
 size of the variable + radix + value
 eg: reg [3:0] a = 4'd12;
@@ -11,13 +12,38 @@ Binary      == b
 Octal       == o
 Hexadecimal == h
 
-# reg & wire
+# Reg & Wire
 Reg type has a history & Wire doesn't have a history
 1) Procedural assignment
-   reg
+   reg type only
    left hand side = expression
 3) Continuous assignment
-   wire
+   wire type only
 
-single  bit: reg a;             wire b;
-multi   bit: reg [n-1 : 0] a;   wire [n-1 : 0] b;
+Single-bit: reg a;             wire b;
+Multi-bit:  reg [n-1 : 0] a;   wire [n-1 : 0] b;
+
+# Veilog data type
+1) Synthesizable: Hardware/RTL
+unsigned: reg/ signed: integer (default 32-bit)
+2) Simulation
+time <- (10 ns, 10.13 ns) -> realtime
+the floating type comes into play
+
+# Reporting Mechanism 
+1) $display();
+can only observe the previous value of the non-blocking assignment
+but can observe the updated value of Continuous & Blocking Assignment
+Sequence：
+| ------------------------ |
+| Continuous    Assignment |
+| Blocking      Assignment |
+| $display();              |
+| Nonblocking   Assignment |
+| $monitor();              |
+| $strobe ();              |
+| ------------------------ |
+3) $monitor();
+4) $strobe();
+
+# Blocking & Nonblocking Assignment 
