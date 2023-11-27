@@ -20,4 +20,9 @@ E) assign the value of the temporary variable to O/I ports
 ### 1) initial: initialize
 ### 2) always: 
 Combinational: it depends on all the inputs
-Sequential: O/P depends clock
+always @ (*)
+Sequential: O/P depends clock 
+always @ (posedge clk)
+*posedge/ negedge*
+synchronous：  always @ (posedge clk)
+asynchronous： always @ (posedge clk, posedge rst)
