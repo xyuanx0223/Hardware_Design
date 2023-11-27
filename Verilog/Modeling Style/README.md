@@ -29,11 +29,18 @@ always @ (posedge clk)
 synchronous：  always @ (posedge clk)
 asynchronous： always @ (posedge clk, posedge rst)
 
-### 3) if(express): 
-      == != >= <= < > !
+### 3) if(express): == != >= <= < > !
       if ()
       else if ()
       else if ()
       ...
       else
-      
+### 4) case(express)
+      case(express)
+      __: begin
+      end
+      __: begin
+      end
+      default:
+      endcase
+### 5)
