@@ -19,6 +19,7 @@ E) assign the value of the temporary variable to O/I ports
 ## Construct
 ### 1) initial: 
 initialize
+
 ### 2) always: 
 Combinational: it depends on all the inputs
 always @ (*)
@@ -27,3 +28,12 @@ always @ (posedge clk)
 *posedge/ negedge*
 synchronous：  always @ (posedge clk)
 asynchronous： always @ (posedge clk, posedge rst)
+
+### 3) if(express): 
+      == != >= <= < > !
+      if ()
+      else if ()
+      else if ()
+      ...
+      else
+      
