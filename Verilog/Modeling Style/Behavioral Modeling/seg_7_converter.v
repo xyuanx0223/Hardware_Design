@@ -1,4 +1,4 @@
-module 7_seg_converter (
+module seg_7_converter (
 input [3:0] bin,
 output [6:0] sout
 );
