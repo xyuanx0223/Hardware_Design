@@ -12,6 +12,7 @@ A) Johnson Counter(q=0, qbar=1, q<=din, qbar<=~din)/ Ring Counter(q=0, q<=din, q
 BAsed on DFF(clk, din, q, qbar)
 J.C. would connect to the qbar at the end of the serials of DFFs(while R.C. always connect to the DFFs)
 NEEDS rst to give an initial value
+P.S. 4_bit serial in also consists 4 DFFs.
 
 B) Ripple Carry Adder
 half adder: s = a ^ b; c = a & b;
