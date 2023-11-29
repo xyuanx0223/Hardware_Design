@@ -7,6 +7,12 @@
 non-synthesizable in Vivado
 
 ### 3) Structural-level modeling style
+eg: 
+A) Johnson Counter(q=0, qbar=1, q<=din, qbar<=~din)/ Ring Counter(q=0, qbar=1, q<=din, qbar<=din)
+BAsed on DFF(clk, din, q, qbar)
+NEEDS rst to give an initial value
+B)
+C)
 
 ### 4) Behavioral level modeling style
 *doesn't know the internal logic*
