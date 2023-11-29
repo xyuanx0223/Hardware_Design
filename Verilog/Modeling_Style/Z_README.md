@@ -45,3 +45,11 @@ asynchronous： always @ (posedge clk, posedge rst)
       endcase
 ### if VS case:
 *if would have a priority, while the case is fair.*
+
+## Instance
+1) sub-system code must be in the same project directory
+2) Module name must be used to access the system
+
+### explicit( mapping by name)
+
+### implicit( mapping by position)
