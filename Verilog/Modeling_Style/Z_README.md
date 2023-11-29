@@ -69,3 +69,10 @@ asynchronous： always @ (posedge clk, posedge rst)
 ### explicit( mapping by name)
 
 ### implicit( mapping by position)
+
+## IP integrator
+// slice concat
+### Barrel Shifter based on mux41 
+--> with s0, s1 to select the corresponding case
+
+
