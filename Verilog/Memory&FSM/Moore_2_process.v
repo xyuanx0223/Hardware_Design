@@ -10,7 +10,7 @@ parameter s1 = 2;
  
 reg [1:0] state = idle, nstate = idle;   
     
-/////three process methodology 
+/////two process methodology 
  
 /////reset logic  -----Sequential process  
    always@(posedge clk)
