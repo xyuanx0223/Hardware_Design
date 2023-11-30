@@ -16,8 +16,9 @@ eg2: 128 * 16 reg [15: 0] mem [127: 0];
 
 ## FSM
 ### Moore FSM(Only On): output depends only on the present state (better implemented with 2/3 process)
-
+synchronus system
 ### Mealy FSM: output depends on the present state and the input (better implemented with 1 process)
+Asynchronus system
 
 ### Implementation Methodology
 RESET LOGIC:    State of the system when rst = 1/0
@@ -35,3 +36,8 @@ NEXT STATE DECODER: transition
    always -- R.L.
    always -- O.D.
    always -- N.S.D.
+
+### Sequence Detector
+1) Overlapping
+previous sequence would be used
+2) Non-overlapping
