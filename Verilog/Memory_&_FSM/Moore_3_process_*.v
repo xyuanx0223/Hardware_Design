@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+// * means this method is recommended to use
  
 module fsm(
     input clk, rst, din,
