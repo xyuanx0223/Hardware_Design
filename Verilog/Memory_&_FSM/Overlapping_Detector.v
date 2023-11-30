@@ -39,7 +39,7 @@ module fsm(
       s2: begin
         if(din) begin
           dout <= 1'b1;
-          state <= s3;
+          state <= s2;
         end
         else begin
           dout <= 1'b0;
