@@ -12,7 +12,7 @@ module ram(
     reg [7: 0] mem [63: 0];
     reg [7: 0] temp;
     integer i;
-
+    // blk_mem_gen_0 b1 (clk, we, addr, din, dout);
     always @ (posedge clk) begin
         if (rst) begin
             for(i = 0; i < 64; i = i + 1) begin
