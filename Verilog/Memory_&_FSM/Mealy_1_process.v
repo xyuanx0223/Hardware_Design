@@ -12,44 +12,42 @@ always@(posedge clk)
 begin
    if(rst == 1'b1)
      begin
-     state <= idle;
-     dout  <= 1'b0;
+         state <= idle;
+         dout  <= 1'b0;
      end
    else 
    begin
       case(state)
-       
        idle: begin
-                dout <= 1'b0;
-                state <= s0;
-                
+            dout <= 1'b0;
+            state <= s0;                
        end
 
        s0: begin 
-                 if(din)
-                 begin
-                  dout   <= 1'b1;
-                  state  <= s1; 
-                 end
-                else
-                 begin
-                  dout  <= 1'b0;
-                  state <= s0;
-                end 
+             if(din)
+             begin
+              dout   <= 1'b1;
+              state  <= s1; 
+             end
+            else
+             begin
+              dout  <= 1'b0;
+              state <= s0;
+            end 
       end
        
       s1: 
       begin
-                 if(din)
-                 begin
-                  dout   <= 1'b0;
-                  state  <= s0; 
-                 end
-                else
-                 begin
-                  dout  <= 1'b0;
-                  state <= s1;
-                 end 
+         if(din)
+         begin
+          dout   <= 1'b0;
+          state  <= s0; 
+         end
+        else
+         begin
+          dout  <= 1'b0;
+          state <= s1;
+         end 
       end
        
       default: begin
