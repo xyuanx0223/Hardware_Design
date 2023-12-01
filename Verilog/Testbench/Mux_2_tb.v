@@ -1,31 +1,38 @@
-`timescale 1ns/1ns
+module mux (
+  input a,b,
+  input sel,
+  output reg x
+);
+ 
+always@(*)begin
+ x = sel? b: a;
+end 
+endmodule
+s
+//////////////////////////////Testbench Code
 
-module mux_2_tb();
-  reg  s_a, s_b, sel;
-  wire out;
-
-  mux_2 mux_2_inst(
-    .a(s_a),
-    .b(s_b),
-    .sel(sel),
-    .out(out)
-  );
-  initial begin
-    s_a = 0; s_b = 0; sel = 0;
-    #200;
-    s_a = 0; s_b = 0; sel = 1;
-    #200;
-    s_a = 0; s_b = 1; sel = 0;
-    #200;
-    s_a = 0; s_b = 1; sel = 1;
-    #200;
-    s_a = 1; s_b = 0; sel = 0;
-    #200;
-    s_a = 1; s_b = 0; sel = 1;
-    #200;
-    s_a = 1; s_b = 1; sel = 0;
-    #200;
-    s_a = 1; s_b = 1; sel = 1;
-    $stop;
-  end
+`timescale 1ns / 1ps
+module tb;
+ 
+reg a = 0,b = 0,sel = 0;
+wire x;
+ 
+initial begin
+a   = 0;
+b   = 0;
+sel = 0;
+end
+ 
+//mux dut (a,b,sel,x);
+ 
+mux dut (.a(a), .b(b), .sel(sel), .x(x));
+ 
+always #10 a = ~a; 
+always #20 b = ~b;
+always #40 sel = ~sel; 
+ 
+initial begin
+#500;
+$finish;
+end
 endmodule
