@@ -17,7 +17,7 @@ baud rate measures the speed of data transmission, including start, stop, and pa
 bit rate(bps) indicates the amount of the actual data transmitted from the sender to the receiver.
 #### TX & RX
 idle state: 1, start bit: 0, LSB, ..., MSB, stop bit:1, idle state
-![image](https://github.com/xyuanx0223/Hardware_Design/assets/92006744/66006b97-b34f-4458-911f-b3da5a4710a2)
+![image](https://github.com/xyuanx0223/Hardware_Design/assets/92006744/66006b97-b34f-4458-911f-b3da5a4710a2　＝　116 × 91)
 
 For example, in UART communication, the baud rate can be calculated using the following formula:
 Baud rate = Clock frequency / Divisor
