@@ -19,6 +19,8 @@ bit rate(bps) indicates the amount of the actual data transmitted from the sende
 idle state: 1, start bit: 0, LSB, ..., MSB, stop bit:1, idle state
 ![image](https://github.com/xyuanx0223/Hardware_Design/assets/92006744/9a8a2f1a-b442-4752-9ac6-e8026d444e34)
 ![image](https://github.com/xyuanx0223/Hardware_Design/assets/92006744/66006b97-b34f-4458-911f-b3da5a4710a2＝116×91)
+![image](https://github.com/xyuanx0223/Hardware_Design/assets/92006744/7dc62b2b-61bc-42b1-b314-a29b1b9bd3dd)
+
 
 For example, in UART communication, the baud rate can be calculated using the following formula:
 Baud rate = Clock frequency / Divisor
